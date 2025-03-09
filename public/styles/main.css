@@ -1,0 +1,55 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.home-bg {
+  background-image: url('./image/OIP.jpg');
+}
+  
+header {
+    background-color: #eea5a5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+  
+.content {
+    padding: 20px;
+}
+  
+footer {
+    background-color: #f3b6b6;
+    color: white;
+    padding: 10px 0;
+    margin-top: 370px;
+    text-align: center;
+}
+  
+  /* Add responsive styles */
+@media (max-width: 600px) {
+    nav ul {
+      text-align: center;
+    }
+}
+  
+  
+
+
+
