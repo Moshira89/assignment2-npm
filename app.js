@@ -5,14 +5,11 @@ import page2Router from './routes/page2.js';
 
 const app = express();
 
-// Set view engine to EJS
 app.set('view engine', 'ejs');
-app.set('views', path.join(process.cwd(), 'views')); // Path for views
+app.set('views', path.join(process.cwd(), 'views')); 
 
-// Serve static files (like stylesheets, images)
 app.use(express.static(path.join(process.cwd(), 'public')));
 
-// Define routes
 app.get('/', (req, res) => {
   res.render('home', {
     title: 'Home Page',
@@ -28,7 +25,6 @@ app.get('/', (req, res) => {
 app.use('/page1', page1Router);
 app.use('/page2', page2Router);
 
-// Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

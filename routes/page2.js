@@ -1,7 +1,6 @@
 import express from 'express';
 const router = express.Router();
 
-// Page 1 main route
 router.get('/', (req, res) => {
   res.render('page2', {
     title: 'Page 2',
@@ -9,7 +8,6 @@ router.get('/', (req, res) => {
   });
 });
 
-// Subpage 1 route
 router.get('/subpage1', (req, res) => {
   res.render('subpage1', {
     title: 'Subpage 1',
@@ -17,7 +15,6 @@ router.get('/subpage1', (req, res) => {
   });
 });
 
-// Subpage 2 route
 router.get('/subpage2', (req, res) => {
   res.render('subpage2', {
     title: 'Subpage 2',

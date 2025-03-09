@@ -42,7 +42,6 @@ footer {
     text-align: center;
 }
   
-  /* Add responsive styles */
 @media (max-width: 600px) {
     nav ul {
       text-align: center;
