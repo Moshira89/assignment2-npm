@@ -3,7 +3,7 @@ const homeData = {
   description: "This is a sample Node.js, Express, and EJS website."
 };
 
-module.exports = {
+modules.exports = {
   homeData
 };
 

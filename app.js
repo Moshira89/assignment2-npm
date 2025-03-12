@@ -1,7 +1,7 @@
-import express from 'express';
-import path from 'path';
-import page1Router from './routes/page1.js';
-import page2Router from './routes/page2.js';
+import express from 'express'
+import path from 'path'
+import page1Router from './routes/page1.js'
+import page2Router from './routes/page2.js'
 
 const app = express();
 
