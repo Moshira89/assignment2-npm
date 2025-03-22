@@ -8,26 +8,27 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
     <nav>
       <a href="/">Home</a>
       <a href="/page1">Page 1</a>
       <a href="/page2">Page 2</a>
     </nav>
   </header>
-
-  <main>
-    <h2>Page 2</h2>
+  
+  <div class="page2-background">
+    <h1><%= title %></h1>
     <p><%= content %></p>
-    <h3>Subpages:</h3>
-    <ul>
-      <li><a href="/page2/subpage1">Subpage 1</a></li>
-      <li><a href="/page2/subpage2">Subpage 2</a></li>
-    </ul>
-  </main>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
+  <div class="page-container">
+    <h2>Subpages</h2>
+    <div class="subpage-links">
+      <a href="/page2/subpage3">Go to Subpage 3</a>
+      <a href="/page2/subpage4">Go to Subpage 4</a>
+    </div>
+  </div>
+  
+  <%- include('partials/footer') %>
 </body>
 </html>
+
